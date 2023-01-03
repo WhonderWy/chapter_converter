@@ -1,7 +1,23 @@
-chardet
-pywin32
-
-# If you want to use GUI, install:
-# attrdict3
-# Gooey
-# in two separate transctions with PIP.
+Package           Version
+----------------- -------
+black             22.12.0
+chardet           5.1.0
+click             8.1.3
+colorama          0.4.6
+colored           1.4.4
+Gooey             1.0.8.1
+mypy              0.991
+mypy-extensions   0.4.3
+numpy             1.24.1
+pathspec          0.10.3
+Pillow            9.4.0
+pip               22.3.1
+platformdirs      2.6.2
+psutil            5.9.4
+pygtrie           2.5.0
+pywin32           305
+setuptools        63.2.0
+six               1.16.0
+tomli             2.0.1
+typing_extensions 4.4.0
+wxPython          4.2.0
