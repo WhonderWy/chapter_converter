@@ -7,6 +7,7 @@ Convert between several different video chapter file formats with ease.
 * Auto input encoding detection
 * Can specify output format and filename
 * Clipboard support (input and output) for editing purposes
+* This fork adds support for YouTube timestamps
 
 ## Usage
 
@@ -52,6 +53,23 @@ See also: example files in `examples`.
 
 Guessed by suffix. Not idiot-proof, please only feed in file with chapters.
 
+### YouTube format (`youtube`)
+
+YouTube supports timestamps without hours or milliseconds.
+
+Format:
+* Each line: `{timestamp} {title}`
+
+Example:
+
+```
+17:02 Title1
+42:19 Title2
+58:10 Title3
+9:16:07 Title4
+...
+```
+
 ### Simple format (`simple`)
 
 I made it up.
@@ -73,14 +91,14 @@ Example:
 Similar to Simple, but separated by tab instead of comma.
 
 Format:
-* Each line: `{timestamp}	{title}`
+* Each line: `{timestamp}    {title}`
 
 Example:
 
 ```
-0:17:02.148	Title1
-0:42:19.976	Title2
-0:58:10.114	Title3
+0:17:02.148    Title1
+0:42:19.976    Title2
+0:58:10.114    Title3
 ...
 ```
 
